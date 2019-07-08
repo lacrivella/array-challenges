@@ -6,9 +6,16 @@ describe('multiple function', () => {
     const array = multiples(n);
     expect(array).toEqual(expect.any(Array));
   });
+
   it('returns multiples of 15', () => {
     const n = 15;
     const array = multiples(n);
     expect(array).toEqual([15, 30, 45, 60, 75, 90]);
+  });
+
+  it('returns multiples of 113', () => {
+    const n = 113;
+    const array = multiples(n);
+    expect(array).toEqual([]);
   });
 });
